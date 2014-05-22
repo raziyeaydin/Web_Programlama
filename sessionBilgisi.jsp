@@ -32,6 +32,7 @@ if(accessCount == null){
 else{
 	accessCount ++ ;
 }
+session.setAttribute("accessCount", accessCount);
 maxInactiveInternal = session.getMaxInactiveInterval();
 
 creationTime = new Date(session.getCreationTime());
